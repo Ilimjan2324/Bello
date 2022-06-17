@@ -1,106 +1,186 @@
 @import "./fonts.css";
 /*BASEIC CONF*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
 body {
-    font-family: "Work Sans", serif;
-    background: #FFF;
+  font-family: "Work Sans", serif;
+  background: #FFF;
 }
+
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
+
 button {
-    border: none;
-    background: none;
-    font-family: "Work Sans", serif;
+  border: none;
+  background: none;
+  font-family: "Work Sans", serif;
 }
+
 input {
-    outline: none;
+  outline: none;
 }
+
 /*BASIC CONF*/
 /*UNIQUE CONF*/
 .container {
-    max-width: 1120px;
-    padding: 0 10px;
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
+  max-width: 1120px;
+  padding: 0 10px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
+
 .d-flex {
-    display: flex;
+  display: flex;
 }
+
 .flex-column {
-    flex-direction: column;
+  flex-direction: column;
 }
+
 .justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 .justify-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
+
 .align-center {
-    align-items: center;
+  align-items: center;
 }
+
 .btn_get-my-price {
-    font-family: "Work Sans", serif;
-    height: 44px;
-    background: #FFFFFF;
-    border: 1px solid rgba(29, 37, 60, 0.2);
-    border-radius: 4px;
-    padding: 0 31px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    text-transform: uppercase;
-    color: #1D253C;
+  font-family: "Work Sans", serif;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid rgba(29, 37, 60, 0.2);
+  border-radius: 4px;
+  padding: 0 31px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #1D253C;
 }
+.btn_orange {
+  background: #F46752;
+  border: 1px solid rgba(29, 37, 60, 0.2);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 0 29px;
+  height: 61px;
+  width: 220px;
+}
+
+.section_suptitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #F46752;
+}
+.section_title {
+  font-weight: 500;
+  line-height: 52px;
+  color: #1D253C;
+}
+.section_desc {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  color: #5A6482;
+}
+
 /*UNIQUE CONF*/
 /*SECTION HEADER*/
 .header {
-    height: 105px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  height: 105px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 .header .container {
-    max-width: 1340px;
+  max-width: 1340px;
 }
 .header_link {
-    position: relative;
-    display: inline-block;
-    margin-left: 35px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #1D253C;
-    transition: .15s;
+  position: relative;
+  display: inline-block;
+  margin-left: 35px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1D253C;
+  transition: 0.15s;
 }
 .header_link:before {
-    content: "";
-    position: absolute;
-    bottom: -2.5px;
-    left: 0;
-    height: 1px;
-    width: 0;
-    background: #007188;
-    transition: .5s;
+  content: "";
+  position: absolute;
+  bottom: -2.5px;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background: #007188;
+  transition: 0.5s;
 }
 .header_link:hover {
-    color: #007188;
+  color: #007188;
 }
 .header_link:hover:before {
-    width: 100%;
+  width: 100%;
 }
 .header_btn_log-in {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #1D253C;
-    margin-right: 39px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1D253C;
+  margin-right: 39px;
 }
+
 /*SECTION HEADER*/
+/*SECTION HERO*/
+.hero {
+  height: 100vh;
+  background: url("../images/Hero.png") no-repeat right;
+  background-position-y: 17px;
+}
+.hero .container {
+  max-width: 1254px;
+}
+.hero .section_suptitle {
+  font-size: 18px;
+  line-height: 27px;
+}
+.hero .section_title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 68px;
+  text-transform: capitalize;
+  width: 463px;
+}
+.hero .section_desc {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  width: 411px;
+  margin: 26px 0 40px;
+}
+.hero .d-flex {
+  padding-top: 27px;
+  height: 100%;
+}
+
+/*SECTION HERO*/
+
+/*# sourceMappingURL=style.css.map */
