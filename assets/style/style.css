@@ -81,9 +81,16 @@ input {
   line-height: 19px;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 0 29px;
+  padding: 0 40px 0 29px;
   height: 61px;
   width: 220px;
+}
+.btn_green {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #126F86;
+  text-transform: capitalize;
 }
 
 .section_suptitle {
@@ -105,8 +112,19 @@ input {
   color: #5A6482;
 }
 
+.grid {
+  display: grid;
+}
+
+.grid_col-6 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid_col-3 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 /*UNIQUE CONF*/
-/*SECTION HEADER*/
 .header {
   height: 105px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -148,8 +166,6 @@ input {
   margin-right: 39px;
 }
 
-/*SECTION HEADER*/
-/*SECTION HERO*/
 .hero {
   height: 100vh;
   background: url("../images/Hero.png") no-repeat right;
@@ -176,11 +192,206 @@ input {
   width: 411px;
   margin: 26px 0 40px;
 }
-.hero .d-flex {
+.hero_content {
   padding-top: 27px;
-  height: 100%;
 }
 
-/*SECTION HERO*/
+.secure {
+  background: #F9F5F2;
+  padding: 85px 0 84px;
+}
+.secure_img {
+  width: 500px;
+  height: 436px;
+  background: #FFFFFF;
+}
+.secure_under-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5A6482;
+  margin-top: 20px;
+}
+.secure_under-desc:before {
+  content: "*";
+  color: #F46752;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.secure_right-side {
+  padding-left: 94px;
+}
+.secure_right-side .section_title {
+  font-weight: 600;
+  font-size: 44px;
+  margin-top: 26px;
+}
+.secure_right-side .section_desc {
+  margin: 19px 0 32px;
+}
+
+.technology {
+  padding: 148px 0 164px;
+}
+.technology_left-side {
+  padding-right: 67px;
+}
+.technology_left-side .section_title {
+  font-size: 45px;
+  margin: 27px 0 35px;
+}
+.technology_left-side .btn_green {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  margin-top: 15px;
+}
+.technology_right-side {
+  position: relative;
+  padding-left: 8px;
+}
+.technology_right-side svg {
+  position: absolute;
+  top: -35px;
+  left: -37px;
+  z-index: -1;
+}
+.technology_img {
+  width: 542px;
+  height: 510px;
+}
+.technology_comment {
+  position: absolute;
+  left: -52px;
+  bottom: -25px;
+  width: 326px;
+  height: 67px;
+  background: #FFFFFF;
+  box-shadow: 3px 4px 34px rgba(66, 71, 77, 0.11);
+  border-radius: 5px;
+  padding-left: 25px;
+}
+.technology_comm {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  color: #1D253C;
+}
+
+.steps {
+  height: 746px;
+  background: #363839;
+}
+.steps_content {
+  position: relative;
+  height: 195px;
+}
+.steps_sm-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.steps_sm-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #ACB4BF;
+}
+.steps_left-part {
+  position: absolute;
+  width: 234px;
+  left: 66px;
+  bottom: -4px;
+}
+.steps_left-part .steps_sm-title {
+  margin-bottom: 8px;
+}
+.steps_center-part {
+  position: absolute;
+  width: 234px;
+}
+.steps_center-part .steps_sm-title {
+  margin-bottom: 14px;
+}
+.steps_right-part {
+  position: absolute;
+  width: 234px;
+}
+.steps_right-part .steps_sm-title {
+  margin-bottom: 8px;
+}
+.steps_circle3 {
+  position: absolute;
+  right: 174px;
+  top: 10px;
+}
+.steps_confetti {
+  position: absolute;
+  bottom: 100px;
+  right: -175px;
+}
+.steps_drop1 {
+  position: absolute;
+  left: 78px;
+  top: -8px;
+}
+.steps_drop2 {
+  position: absolute;
+  left: 347px;
+  top: 1px;
+}
+
+.free {
+  padding: 148px 0 164px;
+  background: #F9F5F2;
+}
+.free_img {
+  width: 542px;
+  height: 510px;
+}
+.free_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.free_img_comment {
+  position: absolute;
+  right: 44px;
+  bottom: -25px;
+  z-index: 2;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: #1D253C;
+  background: #FFFFFF;
+  box-shadow: 3px 4px 34px rgba(66, 71, 77, 0.11);
+  border-radius: 5px;
+  padding: 11px 18px;
+}
+
+.cards {
+  padding: 160px 0 132px;
+}
+.cards_card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 323px;
+  padding: 40px 52px 35px 22px;
+}
+.cards_desc {
+  position: absolute;
+  top: 147px;
+}
+
+.footer_top {
+  padding: 75px 0 39px;
+}
 
 /*# sourceMappingURL=style.css.map */
