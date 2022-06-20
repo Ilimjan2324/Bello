@@ -124,6 +124,10 @@ input {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.grid_col-4 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 /*UNIQUE CONF*/
 .header {
   height: 105px;
@@ -276,6 +280,80 @@ input {
   font-weight: 300;
   font-size: 22px;
   line-height: 28px;
+  color: #1D253C;
+}
+
+.insurance {
+  padding: 91px 0 85px;
+  background: #F8F8F8;
+}
+.insurance .section_suptitle {
+  text-align: center;
+}
+.insurance .section_title {
+  font-size: 43px;
+  text-align: center;
+  margin: 30px 0 37px;
+}
+.insurance .section_desc {
+  width: 1077px;
+  text-align: center;
+  margin-bottom: 41px;
+}
+.insurance .grid {
+  height: 310px;
+  grid-column-gap: 70px;
+}
+.insurance .grid_col-4 {
+  grid-template-columns: repeat(3, 320px);
+}
+.insurance_cards {
+  background: #FFFFFF;
+  padding: 30px 0 44px;
+}
+.insurance_cards_title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #1D253C;
+}
+.insurance_cards_desc {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+  color: #5A6482;
+}
+.insurance_card-1 .insurance_img {
+  width: 105px;
+  height: 70px;
+}
+.insurance_card-1 .insurance_cards_title {
+  margin: 15px 0 5px;
+}
+.insurance_card-1 .insurance_cards_desc {
+  width: 212px;
+}
+.insurance_card-2 .insurance_cards_title {
+  margin: -17px 0 15px;
+}
+.insurance_card-2 .insurance_cards_desc {
+  font-size: 11px;
+  width: 247px;
+  text-align: center;
+}
+.insurance_card-3 .insurance_cards_title {
+  margin-bottom: 10px;
+}
+.insurance_card-3 .insurance_cards_desc {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+.insurance_link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+  text-decoration-line: underline;
   color: #1D253C;
 }
 

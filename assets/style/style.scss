@@ -114,6 +114,9 @@ input {
 .grid_col-3 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.grid_col-4 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 /*UNIQUE CONF*/
 .header {
   height: 105px;
@@ -271,6 +274,99 @@ input {
     font-size: 22px;
     line-height: 28px;
     color: #1D253C
+  }
+}
+.insurance {
+  padding: 91px 0 85px;
+  background: #F8F8F8;
+  & .section {
+    &_suptitle {
+      text-align: center;
+    }
+    &_title {
+      font-size: 43px;
+      text-align: center;
+      margin: 30px 0 37px;
+    }
+    &_desc {
+      width: 1077px;
+      text-align: center;
+      margin-bottom: 41px;
+    }
+  }
+  & .grid {
+    height: 310px;
+    grid-column-gap: 70px;
+    &_col-4 {
+      grid-template-columns: repeat(3, 320px);
+    }
+  }
+  &_cards {
+    background: #FFFFFF;
+    padding: 30px 0 44px;
+    &_title {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 26px;
+      color: #1D253C;
+    }
+    &_desc {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 26px;
+      color: #5A6482;
+    }
+  }
+  &_card-1 {
+    & .insurance {
+      &_img {
+        width: 105px;
+        height: 70px;
+      }
+      &_cards {
+        &_title {
+          margin: 15px 0 5px;
+        }
+        &_desc {
+           width: 212px;
+         }
+       }
+    }
+  }
+  &_card-2 {
+    & .insurance {
+      &_cards {
+        &_title {
+          margin: -17px 0 15px;
+        }
+        &_desc {
+          font-size: 11px;
+          width: 247px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  &_card-3 {
+    & .insurance {
+      &_cards {
+        &_title {
+          margin-bottom: 10px;
+        }
+        &_desc {
+          font-size: 16px;
+          line-height: 26px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  &_link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+    text-decoration-line: underline;
+    color: #1D253C;
   }
 }
 .steps {
