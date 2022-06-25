@@ -13,6 +13,7 @@ html {
 body {
   font-family: "Work Sans", serif;
   background: #FFF;
+  overflow: revert;
 }
 
 a {
@@ -284,6 +285,7 @@ input {
 }
 
 .insurance {
+  position: relative;
   padding: 91px 0 85px;
   background: #F8F8F8;
 }
@@ -323,10 +325,6 @@ input {
   line-height: 26px;
   color: #5A6482;
 }
-.insurance_card-1 .insurance_img {
-  width: 105px;
-  height: 70px;
-}
 .insurance_card-1 .insurance_cards_title {
   margin: 15px 0 5px;
 }
@@ -356,120 +354,149 @@ input {
   text-decoration-line: underline;
   color: #1D253C;
 }
+.insurance_img1 {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+}
+.insurance_img2 {
+  position: absolute;
+  top: -110px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
 
 .steps {
-  height: 746px;
   background: #363839;
+  padding: 120px 0 101px;
+}
+.steps .section_suptitle {
+  font-weight: 500;
+}
+.steps .section_title {
+  font-size: 44px;
+  color: #FFFFFF;
+  margin: 26px 0 15px;
+}
+.steps .section_desc {
+  text-align: center;
+  color: #ACB4BF;
+  width: 731px;
+  margin-bottom: 63px;
 }
 .steps_content {
-  position: relative;
+  width: 100%;
   height: 195px;
 }
-.steps_sm-title {
+.steps_cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.steps_card_title {
   font-weight: 600;
   font-size: 22px;
   line-height: 22px;
   text-align: center;
   color: #FFFFFF;
 }
-.steps_sm-desc {
+.steps_card_desc {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
   color: #ACB4BF;
-}
-.steps_left-part {
-  position: absolute;
   width: 234px;
-  left: 66px;
+}
+.steps_card1 .steps_card_title {
+  position: absolute;
+  top: 91px;
+  left: 100px;
+}
+.steps_card1 .steps_card_desc {
+  position: absolute;
   bottom: -4px;
+  left: 46px;
 }
-.steps_left-part .steps_sm-title {
-  margin-bottom: 8px;
-}
-.steps_center-part {
+.steps_card2 .steps_card_title {
   position: absolute;
-  width: 234px;
+  top: 84px;
+  left: 511px;
 }
-.steps_center-part .steps_sm-title {
-  margin-bottom: 14px;
-}
-.steps_right-part {
+.steps_card2 .steps_card_desc {
   position: absolute;
-  width: 234px;
+  bottom: 23px;
+  left: 0px;
+  right: 0;
+  margin: 0 auto;
 }
-.steps_right-part .steps_sm-title {
-  margin-bottom: 8px;
-}
-.steps_circle3 {
+.steps_card3 .steps_card_title {
   position: absolute;
-  right: 174px;
+  top: 91px;
+  right: 101px;
+}
+.steps_card3 .steps_card_desc {
+  position: absolute;
+  bottom: 22px;
+  right: 56px;
+  width: 256px;
+}
+.steps_one {
+  position: absolute;
+  top: 4px;
+  left: 167px;
+}
+.steps_two {
+  position: absolute;
   top: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.steps_three {
+  position: absolute;
+  right: 162px;
+}
+.steps_circle_1 {
+  position: absolute;
+  top: 24px;
+  left: 182px;
+}
+.steps_circle_2 {
+  position: absolute;
+  top: 24px;
+  left: 524px;
+}
+.steps_circle_3 {
+  position: absolute;
+  top: 10px;
+  right: 174px;
+}
+.steps_path {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .steps_confetti {
   position: absolute;
   bottom: 100px;
-  right: -175px;
+  right: -167px;
 }
-.steps_drop1 {
+.steps_drop_1 {
   position: absolute;
+  top: -13px;
   left: 78px;
-  top: -8px;
 }
-.steps_drop2 {
+.steps_drop_2 {
   position: absolute;
-  left: 347px;
   top: 1px;
+  left: 347px;
 }
-
-.free {
-  padding: 148px 0 164px;
-  background: #F9F5F2;
-}
-.free_img {
-  width: 542px;
-  height: 510px;
-}
-.free_img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.free_img_comment {
-  position: absolute;
-  right: 44px;
-  bottom: -25px;
-  z-index: 2;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 28px;
-  color: #1D253C;
-  background: #FFFFFF;
-  box-shadow: 3px 4px 34px rgba(66, 71, 77, 0.11);
-  border-radius: 5px;
-  padding: 11px 18px;
-}
-
-.cards {
-  padding: 160px 0 132px;
-}
-.cards_card {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  height: 323px;
-  padding: 40px 52px 35px 22px;
-}
-.cards_desc {
-  position: absolute;
-  top: 147px;
-}
-
-.footer_top {
-  padding: 75px 0 39px;
+.steps .btn_orange {
+  margin-top: 36px;
 }
 
 /*# sourceMappingURL=style.css.map */

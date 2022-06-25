@@ -11,6 +11,7 @@ html {
 body {
   font-family: "Work Sans", serif;
   background: #FFF;
+  overflow: revert;
 }
 a {
   color: inherit;
@@ -277,6 +278,7 @@ input {
   }
 }
 .insurance {
+  position: relative;
   padding: 91px 0 85px;
   background: #F8F8F8;
   & .section {
@@ -319,10 +321,6 @@ input {
   }
   &_card-1 {
     & .insurance {
-      &_img {
-        width: 105px;
-        height: 70px;
-      }
       &_cards {
         &_title {
           margin: 15px 0 5px;
@@ -368,118 +366,167 @@ input {
     text-decoration-line: underline;
     color: #1D253C;
   }
+  &_img1 {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+  }
+  &_img2 {
+    position: absolute;
+    top: -110px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 }
 .steps {
-  height: 746px;
   background: #363839;
+  padding: 120px 0 101px;
+  & .section {
+    &_suptitle {
+      font-weight: 500;
+    }
+    &_title {
+      font-size: 44px;
+      color: #FFFFFF;
+      margin: 26px 0 15px;
+    }
+    &_desc {
+      text-align: center;
+      color: #ACB4BF;
+      width: 731px;
+      margin-bottom: 63px;
+    }
+  }
   &_content {
-    position: relative;
+    width: 100%;
     height: 195px;
   }
-  &_sm-title {
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 22px;
-    text-align: center;
-    color: #FFFFFF;
+  &_cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
   }
-  &_sm-desc {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #ACB4BF;
-  }
-  &_left-part {
-    position: absolute;
-    width: 234px;
-    left: 66px;
-    bottom: -4px;
-    & .steps_sm-title {
-      margin-bottom: 8px;
+  &_card {
+    &_title {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 22px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+    &_desc {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #ACB4BF;
+      width: 234px;
     }
   }
-  &_center-part {
-    position: absolute;
-    width: 234px;
-    & .steps_sm-title {
-      margin-bottom: 14px;
+  &_card1 {
+    & .steps_card {
+      &_title {
+        position: absolute;
+        top: 91px;
+        left: 100px;
+      }
+      &_desc {
+        position: absolute;
+        bottom: -4px;
+        left: 46px;
+      }
     }
   }
-  &_right-part {
-    position: absolute;
-    width: 234px;
-    & .steps_sm-title {
-      margin-bottom: 8px;
+  &_card2 {
+    & .steps_card {
+      &_title {
+        position: absolute;
+        top: 84px;
+        left: 511px;
+      }
+      &_desc {
+        position: absolute;
+        bottom: 23px;
+        left: 0px;
+        right: 0;
+        margin: 0 auto;
+      }
     }
   }
-  &_circle3 {
+  &_card3 {
+    & .steps_card {
+      &_title {
+        position: absolute;
+        top: 91px;
+        right: 101px;
+      }
+      &_desc {
+        position: absolute;
+        bottom: 22px;
+        right: 56px;
+        width: 256px;
+      }
+    }
+  }
+  &_one {
     position: absolute;
-    right: 174px;
+    top: 4px;
+    left: 167px;
+  }
+  &_two {
+    position: absolute;
     top: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  &_three {
+    position: absolute;
+    right: 162px;
+  }
+  &_circle {
+    &_1 {
+      position: absolute;
+      top: 24px;
+      left: 182px;
+    }
+    &_2 {
+      position: absolute;
+      top: 24px;
+      left: 524px;
+    }
+    &_3 {
+      position: absolute;
+      top: 10px;
+      right: 174px;
+    }
+  }
+  &_path {
+    position: absolute;
+    top: 17px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
   &_confetti {
     position: absolute;
     bottom: 100px;
-    right: -175px;
+    right: -167px;
   }
-  &_drop1 {
-    position: absolute;
-    left: 78px;
-    top: -8px;
-  }
-  &_drop2 {
-    position: absolute;
-    left: 347px;
-    top: 1px;
-  }
-}
-.free {
-  padding: 148px 0 164px;
-  background: #F9F5F2;
-  &_img {
-    width: 542px;
-    height: 510px;
-    & img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    &_comment {
+  &_drop {
+    &_1 {
       position: absolute;
-      right: 44px;
-      bottom: -25px;
-      z-index: 2;
-      display: inline-block;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-      font-size: 17px;
-      line-height: 28px;
-      color: #1D253C;
-      background: #FFFFFF;
-      box-shadow: 3px 4px 34px rgba(66, 71, 77, 0.11);
-      border-radius: 5px;
-      padding: 11px 18px;
+      top: -13px;
+      left: 78px;
+    }
+    &_2 {
+      position: absolute;
+      top: 1px;
+      left: 347px;
     }
   }
-}
-.cards {
-  padding: 160px 0 132px;
-  &_card {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    height: 323px;
-    padding: 40px 52px 35px 22px;
-  }
-  &_desc {
-    position: absolute;
-    top: 147px;
-
-  }
-}
-.footer {
-  &_top {
-    padding: 75px 0 39px;
+  & .btn_orange {
+    margin-top: 36px;
   }
 }
