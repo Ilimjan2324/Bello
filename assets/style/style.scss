@@ -700,3 +700,99 @@ input {
     }
   }
 }
+.footer {
+  &_top {
+    & .container {
+      padding: 75px 0 40px;
+    }
+    &_right-side {
+      padding-left: 15px;
+      & .section {
+        &_desc {
+          font-family: "Roboto", sans-serif;
+          font-size: 14px;
+          line-height: 23px;
+          width: 320px;
+          margin: 33px 0 22px;
+        }
+      }
+      &_inp {
+        background: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        border-radius: 3px 0 0 3px;
+        width: 216px;
+        height: 60px;
+        font-size: 18px;
+        padding-left: 10px;
+      }
+      & .btn_footer {
+        height: 60px;
+        background: #126F85;
+        border-radius: 0 5px 5px 0;
+        padding: 0 17px 0 19px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 23px;
+        color: #FFFFFF;
+        & svg {
+          margin-left: 3px;
+        }
+        }
+      & .footer_icons {
+        margin-top: 28px;
+        & .fa-brands {
+          &:not(:last-child) {
+            margin-right: 34px;
+          }
+          font-size: 20px;
+          color: #5A6482;
+        }
+      }
+    }
+    &_left-side {
+      padding: 0 15px 0 15px;
+      & .grid {
+        grid-row-gap: 19px;
+      }
+      & .footer {
+        &_sm-title {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 16px;
+          text-transform: uppercase;
+          color: #1D253C;
+          margin-bottom: 19px;
+        }
+        &_link {
+          font-family: "Roboto", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #5A6482;
+        }
+      }
+    }
+  }
+  &_bottom {
+    height: 80px;
+    background: #F8F8F8;
+    &_desc {
+      display: inline-block;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #5A6482
+    }
+    & .btn_get-my-price {
+      font-family: "Roboto", sans-serif;
+      padding: 0 31px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: #1D253C;
+    }
+  }
+}
