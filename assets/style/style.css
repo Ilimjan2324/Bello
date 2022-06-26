@@ -84,6 +84,7 @@ input {
   padding: 0 40px 0 29px;
   height: 61px;
   width: 220px;
+  text-align: center;
 }
 .btn_green {
   font-weight: 500;
@@ -612,6 +613,41 @@ input {
   line-height: 19px;
   text-align: start;
   margin-top: 84px;
+}
+
+.started {
+  background: #E5F3FE;
+}
+.started .section_title {
+  font-weight: 600;
+  font-size: 44px;
+}
+.started .section_desc {
+  color: #676562;
+  margin: 8px 0 39px;
+}
+.started .btn_orange {
+  padding: 0 22px 0 35px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.started .container {
+  position: relative;
+  padding: 107px 0 85px;
+}
+.started_img_1 {
+  position: absolute;
+  bottom: 0;
+  left: -106px;
+}
+.started_img_2 {
+  position: absolute;
+  bottom: 0;
+  right: 82px;
 }
 
 /*# sourceMappingURL=style.css.map */

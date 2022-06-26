@@ -76,6 +76,7 @@ input {
     padding: 0 40px 0 29px;
     height: 61px;
     width: 220px;
+    text-align: center;
   }
   &_green {
     font-weight: 500;
@@ -659,5 +660,43 @@ input {
     line-height: 19px;
     text-align: start;
     margin-top: 84px;
+  }
+}
+.started {
+  background: #E5F3FE;
+  & .section {
+    &_title {
+      font-weight: 600;
+      font-size: 44px;
+    }
+    &_desc {
+      color: #676562;
+      margin: 8px 0 39px;
+    }
+  }
+  & .btn_orange {
+    padding: 0 22px 0 35px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  & .container {
+    position: relative;
+    padding: 107px 0 85px;
+  }
+  &_img {
+    &_1 {
+      position: absolute;
+      bottom: 0;
+      left: -106px;
+    }
+    &_2 {
+      position: absolute;
+      bottom: 0;
+      right: 82px;
+    }
   }
 }
