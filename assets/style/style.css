@@ -13,7 +13,6 @@ html {
 body {
   font-family: "Work Sans", serif;
   background: #FFF;
-  overflow: revert;
 }
 
 a {
@@ -497,6 +496,65 @@ input {
 }
 .steps .btn_orange {
   margin-top: 36px;
+}
+
+.free {
+  background: #F9F5F2;
+  padding: 148px 0 164px;
+}
+.free_left-side {
+  position: relative;
+}
+.free_left-side svg {
+  position: absolute;
+  top: -35px;
+  left: -45px;
+}
+.free_right-side {
+  padding-left: 94px;
+}
+.free_right-side .section_title {
+  width: 496px;
+  font-size: 45px;
+  margin: 30px 0 24px;
+}
+.free_right-side .section_desc {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 23px;
+}
+.free_right-side .btn_green {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  margin-top: 15px;
+}
+.free_img {
+  width: 542px;
+  height: 510px;
+}
+.free_img img {
+  position: absolute;
+}
+.free_comment {
+  position: absolute;
+  right: 44px;
+  bottom: -25px;
+  width: 307px;
+  height: 50px;
+  background: #FFFFFF;
+  box-shadow: 3px 4px 34px rgba(66, 71, 77, 0.11);
+  border-radius: 5px;
+}
+.free_comm {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: #1D253C;
+}
+.free_content {
+  width: 455px;
 }
 
 /*# sourceMappingURL=style.css.map */
